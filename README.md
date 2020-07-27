@@ -177,3 +177,92 @@ or
 
 type("abc") == str
 type([1, 2, 3]) == lst
+
+
+Summary: Processing User Input
+In this section you learned that:
+
+A Python program can get user input via the input function:
+
+The input function halts the execution of the program and gets text input from the user:
+
+name = input("Enter your name: ")
+The input function converts any input to a string, but you can convert it back to int or float:
+
+experience_months = input("Enter your experience in months: ")
+experience_years = int(experience_months) / 12
+You can format strings with (works both on Python 2 and 3):
+
+name = "Sim"
+experience_years = 1.5
+print("Hi %s, you have %s years of experience." % (name, experience_years))
+Output: Hi Sim, you have 1.5 years of experience.
+
+You can also format strings with:
+
+name = "Sim"
+experience_years = 1.5
+print("Hi {}, you have {} years of experience".format(name, experience_years))
+Output: Hi Sim, you have 1.5 years of experience.
+
+Summary: Loops
+In this section you learned that:
+
+For loops are useful for executing a command over a large number of items.
+
+You can create a for loop like so:
+
+for letter in 'abc':
+    print(letter.upper())
+Output:
+
+A
+B
+C
+
+The name after for (e.g. letter) is just a variable name
+
+
+
+You can loop over dictionary keys:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for value in phone_numbers.keys():
+    print(value)
+Output:
+
+John Smith
+Marry Simpsons
+
+You can loop over dictionary values:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for value in phone_numbers.values():
+    print(value)
+Output:
+
++37682929928
++423998200919
+
+You can loop over dictionary items:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for key, value in phone_numbers.items():
+    print(key, value)
+Output: 
+
+('John Smith', '+37682929928')
+
+('Marry Simpons', '+423998200919')
+
+
+
+While loops will run as long as a condition is true:
+
+while datetime.datetime.now() < datetime.datetime(2090, 8, 20, 19, 30, 20):
+    print("It's not yet 19:30:20 of 2090.8.20")
+The loop above will print out the string inside print() over and over again until the 20th of August, 2090.
+
+
+
+
