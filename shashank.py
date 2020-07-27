@@ -13,3 +13,8 @@ sum2=y+y
 print(sum1,sum2)
 
 print(type(x),type(y),type(z))
+
+#In shell give all things we cando
+dir(list)
+#all the functions builtinlike print quit tuple
+dir(__builtins__)
